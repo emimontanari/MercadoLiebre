@@ -1,0 +1,404 @@
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+  --verdeOscuro: #076c05;
+  --blanco: #fff;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  min-width: 320px;
+}
+
+main {
+  width: 100%;
+  background-color: var(--blanco);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+}
+h4 {
+  font-size: 24px;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  color: var(--grisOscuro);
+  font-size: 14px;
+}
+.precio {
+  font-size: 18px;
+}
+.descuento {
+  font-size: 16px;
+}
+/* ENCABEZADO */
+header {
+  background-color: var(--amarillo);
+  width: 100%;
+}
+
+div .burger-menu {
+  margin: auto;
+  width: 4%;
+  font-size: 40px;
+  color: var(--grisClaro);
+  background-color: var(--celeste);
+  border: solid 4px var(--celeste);
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.top-header .logo {
+  padding: 10px;
+  width: 50%;
+  max-width: 240px;
+}
+.top-header .logo img {
+  width: 100%;
+}
+.top-header .form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+  padding: 5px;
+}
+.form{
+  max-width: 389px;
+}
+.formulario {
+  background-color: var(--grisClaro);
+  border: none;
+  border-radius: 3px;
+  color: #666;
+  padding: 0.4rem;
+  font-size: 10px;
+  width: 100%;
+  height: 30.78px;
+  outline: none;
+}
+
+.formulario:focus {
+  border: 1px solid var(--celeste);
+}
+.boton {
+  background: none;
+  border: none;
+  color: #666;
+  padding: 0.4rem;
+  position: absolute;
+  right: 4px;
+  z-index: 10;
+}
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.nav-container {
+  display: none;
+}
+
+.header-paragraph {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+header div p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.productos {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.ofertas {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* PIE DE PAGINA */
+footer {
+  margin-top: 60px;
+  background-color: var(--blanco);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+footer h4 {
+  font-size: 1.1rem;
+  margin: 0px;
+}
+
+footer i {
+  font-size: 2rem;
+  margin-bottom: 2px;
+}
+/* PRODUCTOS CARACTERISTICAS */
+
+.products__item {
+  background-color: var(--blanco);
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  transition: all 1s ease-out;
+}
+.products .products__item{
+    height: 280px;
+}
+.products__item:hover{
+   height: 350px;
+   box-shadow: 5px 10px 9px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 10px 9px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 10px 9px 0px rgba(0,0,0,0.75);
+}
+.description{
+    transition: all 1s ease;
+    opacity:0;
+}
+article:hover .description{
+    opacity:1;
+}
+
+.products__item .main-article .description{
+    transition: all 1s ease;
+    opacity:0;
+}
+article:hover .main-article .description{
+    opacity:1;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section article img {
+  width: 13rem;
+  margin-top: 1.5rem;
+}
+
+.main-product,
+.main-article {
+  background-color: #fff;
+  width: 13rem;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.description {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.precio span {
+  font-size: 12px;
+  color: var(--verdeOscuro);
+  font-weight: bold;
+}
+#camion {
+  font-size: 16px;
+  padding: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  border: solid 1px var(--verdeOscuro);
+  background-color: #fff;
+  border-radius: 50%;
+  color: var(--verdeOscuro);
+  display: block;
+  position: absolute;
+  top: -18px;
+  right: 10px;
+  transition: all 1s ease;
+}
+ article:hover #camion{
+    rotate: -90deg;
+}
+/* TABLETS*/
+
+@media (min-width: 480px) {
+ 
+.formulario {
+  background-color: var(--grisClaro);
+  border: none;
+  border-radius: 3px;
+  color: #666;
+  padding: 0.4rem;
+  font-size: 10px;
+  width: 100%;
+  height: 30.78px;
+  outline: none;
+}
+
+.formulario:focus {
+  border: 1px solid var(--celeste);
+}
+.boton {
+  background: none;
+  border: none;
+  color: #666;
+  padding: 0.4rem;
+  position: absolute;
+  right: 4px;
+  z-index: 10;
+}
+  nav ul {
+    font-size: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navegador1 {
+    justify-content: flex-start;
+    gap: 10px;
+    transition: all 1s;
+  }
+  .navegador1 a:hover{
+    color:#000000;
+    font-size: 14px;
+    font-weight:bold;
+    letter-spacing: 2px;
+  }
+  .navegador2 {
+    justify-content: flex-end;
+    gap: 15px;
+    transition: all 1s;
+  }
+  .navegador2 a:hover{
+    color:#000000;
+    font-size: 14px;
+    font-weight:bold;
+    letter-spacing: 2px;
+  }
+
+  .ofertas .products-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer{
+    margin-top: 50px;
+    background-color: var(--blanco);
+  }
+  
+}
+
+/* Desktop */
+@media only screen and (min-width: 665px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .top-header {
+    flex-wrap: nowrap;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .logo {
+    width: 240px;
+  }
+
+  .formulario {
+    background-color: var(--grisClaro);
+    border: none;
+    border-radius: 3px;
+    color: #666;
+    padding: 0.4rem;
+    font-size: 10px;
+    width: 100%;
+    height: 30.78px;
+    outline: none;
+    max-width: 390px;
+  }
+  .form{
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .formulario:focus {
+    border: 1px solid var(--celeste);
+  }
+  .boton {
+    background: none;
+    border: none;
+    color: #666;
+    padding: 0.4rem;
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+  }
+  footer{
+    margin-top: 50px;
+    background-color: var(--blanco);
+  }
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer div{
+    width: 33%;
+  }
+}
